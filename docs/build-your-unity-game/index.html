@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How to Build Your Unity Game · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;If you&#x27;re here, you&#x27;ve:&lt;/p&gt;
+"/><meta name="docsearch:version" content="Oxygen"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="How to Build Your Unity Game · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="/"/><meta property="og:description" content="&lt;p&gt;If you&#x27;re here, you&#x27;ve:&lt;/p&gt;
+"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="http://localhost:3000/css/code-blocks/github-gist.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-40410914-4', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/skillz-logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><a href="/versions"><h3>Oxygen</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://developers.skillz.com" target="_blank">Developer Console</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Explaining the Unity Workflow</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Welcome<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/welcome">Welcome to the New Docs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">What&#x27;s New in v25.x<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/release-notes">Release Notes</a></li><li class="navListItem"><a class="navItem" href="/docs/upgrade-sdk">Upgrading to SDK Version 25.x</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Before you Begin<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/tech-requirements">Technical Requirements</a></li><li class="navListItem"><a class="navItem" href="/docs/get-game-id">Developer Console Sign Up</a></li><li class="navListItem"><a class="navItem" href="/docs/example-games">Examples</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Explaining the Unity Workflow</h4><ul><li class="navListItem"><a class="navItem" href="/docs/unity-companion">Unity Companion</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/build-your-unity-game">Build Your Unity Game</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Install the SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-unity">Unity</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-cordova">Cordova</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Skillz UI<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/launch-skillz-ui">Launch the Skillz UI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Setup the Core Loop<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/play-and-compare-gameplay">Play and Compare Gameplay (Standard)</a></li><li class="navListItem"><a class="navItem" href="/docs/realtime-gameplay">Realtime Sync Gameplay</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Finishing Touches<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/randomness">Skillz Random and Fairness</a></li><li class="navListItem"><a class="navItem" href="/docs/setting-up-tournaments">Setting Up Tournaments</a></li><li class="navListItem"><a class="navItem" href="/docs/gameplay-parameters">Gameplay Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/custom-themes">Custom Themes</a></li><li class="navListItem"><a class="navItem" href="/docs/automatic-difficulty">Automatic Difficulty</a></li><li class="navListItem"><a class="navItem" href="/docs/sso">Single Sign On</a></li><li class="navListItem"><a class="navItem" href="/docs/apple-pay">Apple Pay</a></li><li class="navListItem"><a class="navItem" href="/docs/audio-api">Audio API</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Push Notifications</h4><ul><li class="navListItem"><a class="navItem" href="/docs/ios-push">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/android-push">Android</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Creating In-App Purchases for Virtual Currency</h4><ul><li class="navListItem"><a class="navItem" href="/docs/ios-in-app-purchases">iOS App Store</a></li><li class="navListItem"><a class="navItem" href="/docs/android-in-app-purchases">Google Play Store</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/deep-linking">Deep Linking (Optional iOS Settings)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Your Game<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">IMPORTANT REQUIREMENTS</h4><ul><li class="navListItem"><a class="navItem" href="/docs/game-submission-requirements">Game Submission Requirements</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Going Live on Skillz</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-your-game-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/move-from-sandbox-to-production">Moving from Sandbox To Production</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">iOS App Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-to-ios-app-store">Submission Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/ios-app-store-submission-best-practices">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/ios-store-rejections">Recommended Rejection Responses</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Samsung Galaxy Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-to-samsung-galaxy-store">Samsung Galaxy Store</a></li><li class="navListItem"><a class="navItem" href="/docs/samsung-galaxy-store-submission-best-practices">Best Practices</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/release-to-skillz-gamer-portal">Skillz Gamer Portal</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Best Practices<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/crash-detection">Crash Detection</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Anti-Cheating Techniques</h4><ul><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-duplicate-data">Duplicate and Verify Data</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-obfuscate-data">Obfuscate Data</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-advanced-data">Advanced Data Protection</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">FAQ<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/unlock-real-prizes">Unlock Real Prizes</a></li><li class="navListItem"><a class="navItem" href="/docs/theme">Game Theme and Marketing Guidelines</a></li><li class="navListItem"><a class="navItem" href="/docs/legal-skillz">Legality of Skill Gaming</a></li><li class="navListItem"><a class="navItem" href="/docs/sandbox-testing">Sandbox Payment Credentials</a></li><li class="navListItem"><a class="navItem" href="/docs/android-dependencies">Android SDK Dependency Tree</a></li><li class="navListItem"><a class="navItem" href="/docs/skillz-currency-modes">Skillz Currency Modes</a></li><li class="navListItem"><a class="navItem" href="/docs/receiving-payments">Receiving Payments</a></li><li class="navListItem"><a class="navItem" href="/docs/orientation">Handling Orientation</a></li><li class="navListItem"><a class="navItem" href="/docs/other-questions">Other Questions</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">API Reference<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/api-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/api-cordova">Cordova</a></li><li class="navListItem"><a class="navItem" href="/docs/api-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/api-unity">Unity</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">How to Build Your Unity Game</h1></header><article><div><span><p>If you're here, you've:</p>
+<ol>
+<li><a href="installing-skillz-unity">Installed</a> the Skillz SDK.</li>
+<li><a href="launch-skillz-ui">Launched</a> the Skillz UI.</li>
+<li>Set up either a <a href="play-and-compare-gameplay">Play and Compare</a> or <a href="realtime-gameplay">Realtime Sync</a> core loop</li>
+<li>Used the <a href="unity-companion">Unity Companion</a> to test your game's workflow with Skillz.</li>
+</ol>
+<p>And ready to test your Skillz integrated game on an actual mobile device. Follow the instructions below on how to build your game for iOS or Android.</p>
+<h2><a class="anchor" aria-hidden="true" id="build-your-game-for-ios"></a><a href="#build-your-game-for-ios" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build Your Game For iOS</h2>
+<h3><a class="anchor" aria-hidden="true" id="set-the-target-ios-version"></a><a href="#set-the-target-ios-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set the Target iOS Version</h3>
+<p>Go to your <code>iOS Player Settings -&gt; Configuration</code>, and set the target minimum iOS version to 9.0 or higher.</p>
+<p><img src="/docs/assets/unity-build-project/ios-set-target-version.png" alt="Set target iOS Version"></p>
+<h3><a class="anchor" aria-hidden="true" id="build-to-an-xcode-project"></a><a href="#build-to-an-xcode-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build to an Xcode Project</h3>
+<p>Go to <code>File -&gt; Build Settings</code>, select iOS then <code>Build</code>. You should be prompted to locate where you saved the <code>Skillz.framework</code> file.</p>
+<h3><a class="anchor" aria-hidden="true" id="set-the-app-s-orientation"></a><a href="#set-the-app-s-orientation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set the App's Orientation</h3>
+<p>Open the Xcode project. In <code>UnityAppController.mm</code>, find the function called <code>application:supportedInterfaceOrientationsForWindow</code>. Currently, this method's body looks similar to:</p>
+<pre><code class="hljs css language-objective-c">- (<span class="hljs-built_in">NSUInteger</span>)application:(<span class="hljs-built_in">UIApplication</span>*)application supportedInterfaceOrientationsForWindow:(<span class="hljs-built_in">UIWindow</span>*)window
+{
+    <span class="hljs-keyword">if</span> ([window rootViewController] == <span class="hljs-literal">nil</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">UIInterfaceOrientationMaskAll</span>;
+
+    <span class="hljs-keyword">return</span> [[window rootViewController] supportedInterfaceOrientations] | _forceInterfaceOrientationMask;
+}
+</code></pre>
+<p>Since Skillz doesn’t support switching orientations between portrait and landscape, you’ll need to modify this function to support only either portrait or landscape:</p>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-258-tab-259" class="nav-link active" data-group="group_258" data-tab="tab-group-258-content-259">Portrait</div><div id="tab-group-258-tab-260" class="nav-link" data-group="group_258" data-tab="tab-group-258-content-260">Landscape</div></div><div class="tab-content"><div id="tab-group-258-content-259" class="tab-pane active" data-group="group_258" tabindex="-1"><div><span><pre><code class="hljs css language-objective-c"><span class="hljs-keyword">return</span> (<span class="hljs-number">1</span> &lt;&lt; UIInterfaceOrientationPortrait) | (<span class="hljs-number">1</span> &lt;&lt; UIInterfaceOrientationPortraitUpsideDown);<br /></code></pre>
+</span></div></div><div id="tab-group-258-content-260" class="tab-pane" data-group="group_258" tabindex="-1"><div><span><pre><code class="hljs css language-objective-c"><span class="hljs-keyword">return</span> (<span class="hljs-number">1</span> &lt;&lt; UIInterfaceOrientationLandscapeRight) | (<span class="hljs-number">1</span> &lt;&lt; UIInterfaceOrientationLandscapeLeft);<br /></code></pre>
+</span></div></div></div></div>
+<h3><a class="anchor" aria-hidden="true" id="disable-bitcode-if-needed"></a><a href="#disable-bitcode-if-needed" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disable Bitcode (If Needed)</h3>
+<p>If you are building on a device, you may run into an error about your game not supporting bitcode. Here’s an example error:</p>
+<blockquote>
+<p><code>/Skillz.framework/Skillz</code> does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture arm64</p>
+</blockquote>
+<p>You can disable this by going to your target's Build Settings then setting <code>Enable Bitcode</code> to <code>'No'</code>.</p>
+<p><img src="/docs/assets/unity-build-project/ios-disable-bitcode.png" alt="Disable Bitcode"></p>
+<p>You should now be able to build on a device via Xcode.</p>
+<p>We’re always here to help. Contact <code>integrations@skillz.com</code> if you run into any issues.</p>
+<h2><a class="anchor" aria-hidden="true" id="set-up-android-builds"></a><a href="#set-up-android-builds" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set Up Android Builds</h2>
+<p>The following steps are required before you build your game for the first time.</p>
+<h3><a class="anchor" aria-hidden="true" id="regenerate-android-files"></a><a href="#regenerate-android-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Regenerate Android Files</h3>
+<p>Make sure that Skillz emitted <code>mainTemplate.gradle</code> and <code>proguard-user.txt</code> in <code>Assets/Plugins/Android/</code>. If either are missing, please:</p>
+<ol>
+<li>Select the <code>Skillz &gt; Regenerate Android Files</code> menu item.</li>
+<li>A prompt may appear asking for permission to overwrite mainTemplate.gradle and proguard-user.txt. Select &quot;Yes&quot;.</li>
+<li>Save your project, close it, and reopen it. This is because the Unity editor does not always refresh correctly.</li>
+<li>Verify that <code>mainTemplate.gradle</code> and <code>proguard-user.txt</code> both exist in <code>Assets/Plugins/Android/</code> before proceeding.</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="important"></a><a href="#important" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Important</h4>
+<p>The <code>mainTemplate.gradle</code> that Skillz emits ensures that an exported Android Studio project will compile and run successfully (with Skillz). Other libraries, such as Firebase, may overwrite it. Make sure that it is the one that Skillz emits.</p>
+<p>The dependencies section should look similar to:</p>
+<pre><code class="hljs css language-groovy">dependencies <span class="token punctuation">{</span>
+    implementation <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token punctuation">:</span> <span class="token string">'libs'</span><span class="token punctuation">,</span> include<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'*.jar'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    implementation <span class="token punctuation">(</span><span class="token string">"com.skillz.sdk:skillz-sdk-android:&lt;sdk_version_string>"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        transitive <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">**</span>DEPS<span class="token operator">**</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="configure-google-play-services-resolver"></a><a href="#configure-google-play-services-resolver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure Google Play Services Resolver</h3>
+<p>Skillz for Unity is bundled with the <a href="https://github.com/googlesamples/unity-jar-resolver">Google Play Services Resolver</a> plugin. This plugin will resolve transitive dependencies between multiple libraries (that support it) for Android, such as Skillz and Firebase. However, preliminary configuration is needed:</p>
+<ol>
+<li>Select the <code>Assets &gt; Play Services Resolver &gt; Android Resolver &gt; Settings</code> menu item.</li>
+<li>Click the &quot;Reset to Defaults&quot; button as a precaution.</li>
+<li>Uncheck the &quot;Enable Auto-Resolution&quot; option.</li>
+<li>Make sure the &quot;Patch mainTemplate.gradle&quot; option is <strong>checked</strong>.
+<ul>
+<li>By selecting this option, the Play Services Resolver will modify <code>Assets/Plugins/Android/mainTemplate.gradle</code> with the list of resolved of resolved dependencies.</li>
+<li>The final <code>build.gradle</code> file in an exported Android Studio project will list these dependencies.</li>
+<li>This approach is recommended by Google. Otherwise, the plugin will download the resolved dependencies as JARs/AARs.</li>
+</ul></li>
+<li>Check the &quot;Use Jetifier&quot; option. Skillz requires the new <a href="https://developer.android.com/jetpack/androidx">AndroidX Support Libraries</a>, instead of the original Android Support Libraries. Checking the Jetifier option ensures that all libraries that depend on the original Android Support Libraries are migrated to the equivalent AndroidX ones.</li>
+<li>Click the &quot;OK&quot; button to save your changes.</li>
+</ol>
+<blockquote>
+<h4><a class="anchor" aria-hidden="true" id="help-the-use-jetifier-option-is-missing"></a><a href="#help-the-use-jetifier-option-is-missing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Help, the &quot;Use Jetifier&quot; Option Is Missing</h4>
+<p>If the &quot;Use Jetifier&quot; option is missing, it is possible that you installed another library that had an older version of the Google Play Services Resolver. You'll have to reinstall the copy that is bundled with the Skillz SDK:</p>
+<ol>
+<li>Delete the <code>Assets/PlayServicesResolver</code> folder.</li>
+<li><a href="installing-skillz-unity#import-the-new-unity-package">Reimport</a> the Skillz SDK.</li>
+<li>From the import dialog, ensure the &quot;PlayServicesResolver&quot; folder, and all its subfolders and files, are checked.</li>
+<li>Click the Import button.</li>
+</ol>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="resolve-android-dependencies"></a><a href="#resolve-android-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resolve Android Dependencies</h3>
+<p>With the Play Services Resolver configured, it's time to resolve your Unity project's Android dependencies. Select <code>Assets &gt; Play Services Resolver &gt; Android Resolver &gt; Resolve</code>. A message box will display after resolution has completed.</p>
+<p>Afterwards, verify that <code>mainTemplate.gradle</code> was modified to ensure that all resolved dependencies are listed.</p>
+<p>The dependencies section should look similar to this snippet <strong>before</strong> modification:</p>
+<pre><code class="hljs css language-groovy">dependencies <span class="token punctuation">{</span>
+    implementation <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token punctuation">:</span> <span class="token string">'libs'</span><span class="token punctuation">,</span> include<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'*.jar'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    implementation <span class="token punctuation">(</span><span class="token string">"com.skillz.sdk:skillz-sdk-android:&lt;sdk_version_string>"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        transitive <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">**</span>DEPS<span class="token operator">**</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>And it should look similar to this snippet <strong>after</strong> modification:</p>
+<pre><code class="hljs css language-groovy">dependencies <span class="token punctuation">{</span>
+    implementation <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token punctuation">:</span> <span class="token string">'libs'</span><span class="token punctuation">,</span> include<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'*.jar'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    implementation <span class="token punctuation">(</span><span class="token string">"com.skillz.sdk:skillz-sdk-android:&lt;sdk_version_string>"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        transitive <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token comment">// Android Resolver Dependencies Start</span>
+    implementation <span class="token string">'android.arch.lifecycle:extensions:1.1.1'</span> <span class="token comment">// Assets/Skillz/Editor/SkillzDependencies.xml:109</span>
+    implementation <span class="token string">'com.airbnb.android:lottie-react-native-skillz:2.6.2'</span> <span class="token comment">// Assets/Skillz/Editor/SkillzDependencies.xml:29</span>
+
+    <span class="token comment">// Etc., etc.</span>
+</code></pre>
+<p>If the file did not appear to be changed, you may have to save your project, reopen it, and select the <code>Assets &gt; Play Services Resolver &gt; Android Resolver &gt; Force Resolve</code> menu item.</p>
+<h2><a class="anchor" aria-hidden="true" id="build-your-game-for-android"></a><a href="#build-your-game-for-android" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build Your Game For Android</h2>
+<blockquote>
+<h4><a class="anchor" aria-hidden="true" id="note"></a><a href="#note" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h4>
+<p>The Skillz SDK does NOT support building an APK directly from Unity. Please export your project to Android Studio, as described in the section below, when you need to build an APK.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="change-android-build-settings-to-use-arm64"></a><a href="#change-android-build-settings-to-use-arm64" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Android Build Settings to use ARM64</h3>
+<p>Navigate to your Android Player Settings via Edit &gt; Project Settings &gt; Player &gt; Android Icon. Change &quot;Scripting Backend&quot; to <code>IL2CPP</code>. Under &quot;Target Architectures&quot; check the box next to <code>ARM64</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="export-to-android-studio"></a><a href="#export-to-android-studio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export to Android Studio</h3>
+<p>If you choose to export to Android Studio, make sure to click on <code>Export Project</code>.</p>
+<p><img src="/docs/assets/unity-build-project/android-export.png" alt="Export to Android Studio"></p>
+<p>Then, in Android Studio, go to <code>File &gt; New &gt; Import Project</code> and select the exported directory. Your Android studio project will contain a <code>build.gradle</code> file that was generated from <code>Assets/Plugins/Android/mainTemplate.gradle</code> of your Unity project. Perform any changes you wish to make in the (Android Studio) project and you should now be able to build and run your game on a device.</p>
+<h3><a class="anchor" aria-hidden="true" id="modify-androidmanifestxml"></a><a href="#modify-androidmanifestxml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modify AndroidManifest.xml</h3>
+<ul>
+<li>The application needs to set the attribute <code>isGame</code> to <code>false</code> or completely remove the attribute</li>
+<li>The main activity's <code>launchMode</code> should be assigned as <code>singleTop</code></li>
+<li>The main activity should have the following:
+<ul>
+<li><code>android:alwaysRetainTaskState=&quot;true&quot;</code></li>
+<li><code>android:clearTaskOnLaunch=&quot;false&quot;</code></li>
+</ul></li>
+</ul>
+<p>For example:</p>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:isGame</span>=<span class="hljs-string">"false"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">activity</span>
+        <span class="hljs-attr">android:launchMode</span>=<span class="hljs-string">"singleTop"</span>
+        <span class="hljs-attr">android:clearTaskOnLaunch</span>=<span class="hljs-string">"false"</span>
+        <span class="hljs-attr">android:alwaysRetainTaskState</span>=<span class="hljs-string">"true"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
+</code></pre>
+<p>Contact <code>integrations@skillz.com</code> if you run into any issues.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/unity-companion"><span class="arrow-prev">← </span><span>Unity Companion</span></a><a class="docs-next button" href="/docs/installing-skillz-ios"><span class="function-name-prevnext">iOS</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#build-your-game-for-ios">Build Your Game For iOS</a><ul class="toc-headings"><li><a href="#set-the-target-ios-version">Set the Target iOS Version</a></li><li><a href="#build-to-an-xcode-project">Build to an Xcode Project</a></li><li><a href="#set-the-app-s-orientation">Set the App's Orientation</a></li><li><a href="#disable-bitcode-if-needed">Disable Bitcode (If Needed)</a></li></ul></li><li><a href="#set-up-android-builds">Set Up Android Builds</a><ul class="toc-headings"><li><a href="#regenerate-android-files">Regenerate Android Files</a></li><li><a href="#configure-google-play-services-resolver">Configure Google Play Services Resolver</a></li><li><a href="#resolve-android-dependencies">Resolve Android Dependencies</a></li></ul></li><li><a href="#build-your-game-for-android">Build Your Game For Android</a><ul class="toc-headings"><li><a href="#change-android-build-settings-to-use-arm64">Change Android Build Settings to use ARM64</a></li><li><a href="#export-to-android-studio">Export to Android Studio</a></li><li><a href="#modify-androidmanifestxml">Modify AndroidManifest.xml</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright"><a href="/" class="nav-home"><img src="/img/skillz-logo.svg" alt="Documentation" width="150" height="42"/></a>    Copyright © 2020 Skillz</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'baf1ce8500f322fe95d62a7ebae8cc23',
+                indexName: 'skillz',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

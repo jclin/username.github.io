@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Crash Detection via Crashlytics · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;At Skillz, we use &lt;a href=&quot;https://get.fabric.io/&quot;&gt;Fabric&lt;/a&gt; to manage our test apps and the Crashlytics kit for its powerful crash reporting and analytics tools. We highly recommend integrating Fabric and Crashlytics with your game to identify bugs and crashes more efficiently.&lt;/p&gt;
+"/><meta name="docsearch:version" content="v23.2.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Crash Detection via Crashlytics · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="/"/><meta property="og:description" content="&lt;p&gt;At Skillz, we use &lt;a href=&quot;https://get.fabric.io/&quot;&gt;Fabric&lt;/a&gt; to manage our test apps and the Crashlytics kit for its powerful crash reporting and analytics tools. We highly recommend integrating Fabric and Crashlytics with your game to identify bugs and crashes more efficiently.&lt;/p&gt;
+"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="http://localhost:3000/css/code-blocks/github-gist.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-40410914-4', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/skillz-logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><a href="/versions"><h3>v23.2.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://developers.skillz.com" target="_blank">Developer Console</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Best Practices</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Welcome<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/welcome">Welcome to the New Docs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">What&#x27;s New in v23.2.1<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/release-notes">Release Notes</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/upgrade-sdk">Upgrading to SDK Version 23.x</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Before you Begin<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/tech-requirements">Technical Requirements</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/get-game-id">Developer Console Sign Up</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/example-games">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Install the SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/installing-skillz-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/installing-skillz-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/installing-skillz-unity">Unity</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/installing-skillz-cordova">Cordova</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Skillz UI<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/launch-skillz-ui">Launch the Skillz UI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Setup the Core Loop<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/play-and-compare-gameplay">Play and Compare Gameplay (Standard)</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/realtime-gameplay">Realtime Sync Gameplay</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Finishing Touches<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/randomness">Skillz Random and Fairness</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/setting-up-tournaments">Setting Up Tournaments</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/gameplay-parameters">Gameplay Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/custom-themes">Custom Themes</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/automatic-difficulty">Automatic Difficulty</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/sso">Single Sign On</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/apple-pay">Apple Pay</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/audio-api">Audio API</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Push Notifications</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/ios-push">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/android-push">Android</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Creating In-App Purchases for Virtual Currency</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/ios-in-app-purchases">iOS App Store</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/android-in-app-purchases">Google Play Store</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/deep-linking">Deep Linking (Optional iOS Settings)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Your Game<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">IMPORTANT REQUIREMENTS</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/game-submission-requirements">Game Submission Requirements</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Going Live on Skillz</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/release-your-game-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/move-from-sandbox-to-production">Moving from Sandbox To Production</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">iOS App Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/release-to-ios-app-store">Submission Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/ios-app-store-submission-best-practices">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/ios-store-rejections">Recommended Rejection Responses</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Samsung Galaxy Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/release-to-samsung-galaxy-store">Samsung Galaxy Store</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/samsung-galaxy-store-submission-best-practices">Best Practices</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/release-to-skillz-gamer-portal">Skillz Gamer Portal</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Best Practices<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/v23.2.1/crash-detection">Crash Detection</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Anti-Cheating Techniques</h4><ul><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/anti-cheating-techniques-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/anti-cheating-techniques-duplicate-data">Duplicate and Verify Data</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/anti-cheating-techniques-obfuscate-data">Obfuscate Data</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/anti-cheating-techniques-advanced-data">Advanced Data Protection</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">FAQ<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/unlock-real-prizes">Unlock Real Prizes</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/theme">Game Theme and Marketing Guidelines</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/legal-skillz">Legality of Skill Gaming</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/sandbox-testing">Sandbox Payment Credentials</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/android-dependencies">Android SDK Dependency Tree</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/skillz-currency-modes">Skillz Currency Modes</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/receiving-payments">Receiving Payments</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/orientation">Handling Orientation</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/other-questions">Other Questions</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">API Reference<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/api-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/api-cordova">Cordova</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/api-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/v23.2.1/api-unity">Unity</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Crash Detection via Crashlytics</h1></header><article><div><span><p>At Skillz, we use <a href="https://get.fabric.io/">Fabric</a> to manage our test apps and the Crashlytics kit for its powerful crash reporting and analytics tools. We highly recommend integrating Fabric and Crashlytics with your game to identify bugs and crashes more efficiently.</p>
+<p>This article will discuss how to integrate Crashlytics into your cross-platform Unity game.</p>
+<h2><a class="anchor" aria-hidden="true" id="prerequisites"></a><a href="#prerequisites" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisites</h2>
+<p>This guide assumes you have successfully exported your app from Unity to either an Xcode project or an Android Studio project, and that said project can compile and run. Also, Skillz will set up an email alias that will receive a notification when your app has been registered with it, as well as one anytime a crash is detected. Make a request to <a href="mailto:integrations@skillz.com">integrations@skillz.com</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="ios"></a><a href="#ios" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iOS</h2>
+<p>Integrating Crashlytics into your exported iOS project is fairly straightforward. Simply follow the detailed instructions <a href="https://fabric.io/kits/ios/crashlytics/install">here</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="android"></a><a href="#android" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Android</h2>
+<p>Integrating Crashlytics into your exported Android Studio project is a bit more involved. This section will describe in detail how to get you up and running.</p>
+<h2><a class="anchor" aria-hidden="true" id="modify-buildgradle"></a><a href="#modify-buildgradle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modify <code>build.gradle</code></h2>
+<p>In this section, you will be adding Fabric.io/Crashlytics as a dependency in your build.gradle file.</p>
+<ol>
+<li>Open your Android Studio project.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Navigate to and open the <code>build.gradle</code> file for your app:</li>
+</ol>
+<p><img src="/docs/assets/crash-detection/build-dot-gradle.png" alt="Build Dot Gradle"></p>
+<hr>
+<ol start="3">
+<li>Point to to Fabric.io’s Maven repo in the buildscript section:</li>
+</ol>
+<pre><code class="hljs css language-groovy">buildscript <span class="token punctuation">{</span>
+    repositories<span class="token punctuation">{</span>
+        <span class="token function">google</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        maven<span class="token punctuation">{</span>
+            url <span class="token string">'https://maven.fabric.io/public'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+         # Make sure Fabric is referenced at the top of <span class="token keyword">this</span> list
+         classpath <span class="token string">'io.fabric.tools:gradle:1.25.4'</span>
+         classpath <span class="token string">'com.android.tools.build:gradle:3.2.1'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<ol start="4">
+<li>Put the Fabric plugin after the Android plugin:</li>
+</ol>
+<pre><code class="hljs css language-groovy">apply plugin<span class="token punctuation">:</span> ‘com<span class="token operator">.</span>android<span class="token operator">.</span>application’
+apply plugin<span class="token punctuation">:</span> ‘io<span class="token operator">.</span>fabric’
+</code></pre>
+<hr>
+<ol start="5">
+<li>Add Crashlytics as a dependency in the dependencies section:</li>
+</ol>
+<pre><code class="hljs css language-groovy">dependencies <span class="token punctuation">{</span>
+    implementation <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token punctuation">:</span> <span class="token string">'libs'</span><span class="token punctuation">,</span> include<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'*.jar'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    #This section will depend on your specific project<span class="token punctuation">,</span> add Crashlytics at the end of the list<span class="token punctuation">:</span>
+    <span class="token function">api</span><span class="token punctuation">(</span><span class="token string">'com.crashlytics.sdk.android:crashlytics:2.9.4@aar'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        transitive<span class="token operator">=</span><span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="add-your-fabricio-api-key-and-allow-internet-access"></a><a href="#add-your-fabricio-api-key-and-allow-internet-access" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add Your Fabric.io API Key and Allow Internet Access</h2>
+<ol>
+<li>You’ll need to add your API key for Fabric.io into your AndroidManifest.xml. It needs to be added in the application section with the other meta-data elements. For example:</li>
+</ol>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">application</span>
+    <span class="hljs-attr">android:allowBackup</span>=<span class="hljs-string">"true"</span>
+    <span class="hljs-attr">android:icon</span>=<span class="hljs-string">"@mipmap/ic_launcher"</span>
+    <span class="hljs-attr">android:label</span>=<span class="hljs-string">"@string/app_name"</span>
+    <span class="hljs-attr">android:theme</span>=<span class="hljs-string">"@style/AppTheme"</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">".MainActivity"</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">"@string/app_name"</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.intent.action.MAIN"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.intent.category.LAUNCHER"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
+
+     <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span>
+         <span class="hljs-attr">android:name</span>=<span class="hljs-string">"io.fabric.ApiKey"</span>
+         <span class="hljs-attr">android:value</span>=<span class="hljs-string">"e13bc6de3cdee809968ab4fc98fe3dd5d32d1aa5"</span>
+     /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
+</code></pre>
+<hr>
+<ol start="2">
+<li>Fabric.io needs permissions to access the internet, so we’ll add that to <code>AndroidManifest.xml</code> as well (outside the application element):</li>
+</ol>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">uses-permission</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.permission.INTERNET"</span> /&gt;</span>
+</code></pre>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="initializing-crashlytics"></a><a href="#initializing-crashlytics" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Initializing Crashlytics</h2>
+<p>Next, Crashlytics needs to be initialized. This part of the process is more involved, so we’ve broken it up into sub-sections.</p>
+<h3><a class="anchor" aria-hidden="true" id="subclass-unitygameactivity"></a><a href="#subclass-unitygameactivity" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Subclass UnityGameActivity</h3>
+<p>Because this app was exported from Unity, it currently is using the UnityGameActivity class as part of the Skillz integration. Fabric.io’s Crashlytics is also being integrated and initialized, so we’ll need to subclass UnityGameActivity and do the Crashlytics initialization in there.</p>
+<ol>
+<li>In Android Studio, navigate to where the Java source code resides. For example:</li>
+</ol>
+<p><img src="/docs/assets/crash-detection/your-activity.png" alt="Your Activity"></p>
+<hr>
+<ol start="2">
+<li>Next, right-click the “java” folder, and select New-&gt;Java Class from the context menu.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>A dialog will pop up enter details of the new class:</li>
+</ol>
+<p><img src="/docs/assets/crash-detection/create-new-class.png" alt="Create New Class"></p>
+<p>You can give the class any Name and specific any Package you like, but it <em>must</em> have <code>com.skillz.activity.UnityGameActivity</code> as its Superclass.</p>
+<p>Also, the Visibility must be <code>Public</code> with Modifiers set to <code>None</code>.</p>
+<hr>
+<ol start="4">
+<li>Click OK. Your class is created. Next up, well initialize Crashlytics inside it.</li>
+</ol>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="override-the-oncreate-method"></a><a href="#override-the-oncreate-method" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Override the onCreate method</h3>
+<ol>
+<li>Double click the class you just created to open its source file. In this guide, we’ve named ours SkillzUnityGameActivity.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Add the called out lines:</li>
+</ol>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">package</span> com.skillz.pinball;
+<span class="hljs-keyword">import</span> android.os.Bundle;
+<span class="hljs-keyword">import</span> com.skillz.activity.UnityGameActivity;
+
+<span class="hljs-keyword">import</span> com.crashlytics.android.Crashlytics;
+<span class="hljs-keyword">import</span> io.fabric.sdk.android.Fabric;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SkillzUnityGameActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">UnityGameActivity</span>
+</span>{
+    <span class="hljs-keyword">private</span> Crashlytics mCrashlytics;
+
+    <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span>
+    </span>{
+        <span class="hljs-comment">// Add the following two lines:</span>
+        mCrashlytics = <span class="hljs-keyword">new</span> Crashlytics();
+        Fabric.with(<span class="hljs-keyword">this</span>, mCrashlytics);
+
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+     }
+}
+</code></pre>
+<hr>
+<ol start="3">
+<li>Save your changes.</li>
+</ol>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="point-to-the-new-class-in-the-app-s-manifest"></a><a href="#point-to-the-new-class-in-the-app-s-manifest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Point to the new class in the app’s manifest</h3>
+<p>You’re almost done. Now, we need to let the app use this new class when launching Skillz. To do so, <code>AndroidManifest.xml</code> will need to be modified.</p>
+<ol>
+<li>Open AndroidManifest.xml</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Change the name attribute in the <code>&lt;activity&gt;</code> element to reference your subclass:</li>
+</ol>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"com.skillz.pinball.SkillzUnityGameActivity"</span> /&gt;</span>
+</code></pre>
+<p>Remember the Package name you specified earlier? Well, that needs to be pre-pended to the subclass’ name, or the app will crash when run. An easy way to find the path name is by choosing the <em>Project</em> view:</p>
+<p><img src="/docs/assets/crash-detection/project-view.png" alt="Project View"></p>
+<hr>
+<ol start="3">
+<li>Now, look for a <code>&lt;meta-data&gt;</code> tag that has this attribute: <code>android:name='skillz_game_activity'</code>.</li>
+</ol>
+<hr>
+<ol start="4">
+<li>Modify the android:value attribute to point to your subclass. Again, be sure it includes the class’ package name:</li>
+</ol>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span>
+    <span class="hljs-attr">android:name</span>=<span class="hljs-string">“skillz_game_activity”</span>
+    <span class="hljs-attr">android:value</span>=<span class="hljs-string">“com.skillz.pinball.SkillzUnityGameActivity”</span> /&gt;</span>
+</code></pre>
+<hr>
+<ol start="5">
+<li>Save your changes</li>
+</ol>
+<p>Congratulations, you’re now ready to run your app, and have it register itself with Crashlytics!</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="run-your-app"></a><a href="#run-your-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run Your App</h2>
+<p>At this point, you should be able to compile and run your app. If everything was set up correctly, your app will register itself with Crashlytics when the Skillz UI is first launched.</p>
+<ol>
+<li>In Android Studio, select <code>Build-&gt;Make Project</code> from the top-level menu.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Verify that your project can compile before moving to the next step.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>Click the Play button:</li>
+</ol>
+<p><img src="/docs/assets/crash-detection/play-button.png" alt="Play Button"></p>
+<hr>
+<ol start="4">
+<li>Your app is now running on a device or emulator. Bring up the Skillz UI.</li>
+</ol>
+<hr>
+<ol start="5">
+<li>If everything was set up correctly, you should receive an email (to the address that was set up earlier) indicating that your app is now registered with Crashlytics.</li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/v23.2.1/release-to-skillz-gamer-portal"><span class="arrow-prev">← </span><span>Skillz Gamer Portal</span></a><a class="docs-next button" href="/docs/v23.2.1/anti-cheating-techniques-overview"><span>Overview</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#ios">iOS</a></li><li><a href="#android">Android</a></li><li><a href="#modify-buildgradle">Modify <code>build.gradle</code></a></li><li><a href="#add-your-fabricio-api-key-and-allow-internet-access">Add Your Fabric.io API Key and Allow Internet Access</a></li><li><a href="#initializing-crashlytics">Initializing Crashlytics</a><ul class="toc-headings"><li><a href="#subclass-unitygameactivity">Subclass UnityGameActivity</a></li><li><a href="#override-the-oncreate-method">Override the onCreate method</a></li><li><a href="#point-to-the-new-class-in-the-app-s-manifest">Point to the new class in the app’s manifest</a></li></ul></li><li><a href="#run-your-app">Run Your App</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright"><a href="/" class="nav-home"><img src="/img/skillz-logo.svg" alt="Documentation" width="150" height="42"/></a>    Copyright © 2020 Skillz</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'baf1ce8500f322fe95d62a7ebae8cc23',
+                indexName: 'skillz',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
