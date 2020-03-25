@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Setting Up Apple Pay · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;instructions&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#instructions&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instructions&lt;/h2&gt;
+"/><meta name="docsearch:version" content="v23.2.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Setting Up Apple Pay · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="/"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;instructions&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#instructions&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instructions&lt;/h2&gt;
+"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="http://localhost:3000/css/code-blocks/github-gist.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-40410914-4', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/skillz-logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><a href="/versions"><h3>v23.2.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://developers.skillz.com" target="_blank">Developer Console</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Finishing Touches</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Welcome<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/welcome">Welcome to the New Docs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">What&#x27;s New in v23.2.1<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/release-notes">Release Notes</a></li><li class="navListItem"><a class="navItem" href="/docs/upgrade-sdk">Upgrading to SDK Version 23.x</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Before you Begin<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/tech-requirements">Technical Requirements</a></li><li class="navListItem"><a class="navItem" href="/docs/get-game-id">Developer Console Sign Up</a></li><li class="navListItem"><a class="navItem" href="/docs/example-games">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Install the SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-unity">Unity</a></li><li class="navListItem"><a class="navItem" href="/docs/installing-skillz-cordova">Cordova</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Skillz UI<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/launch-skillz-ui">Launch the Skillz UI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Setup the Core Loop<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/play-and-compare-gameplay">Play and Compare Gameplay (Standard)</a></li><li class="navListItem"><a class="navItem" href="/docs/realtime-gameplay">Realtime Sync Gameplay</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Finishing Touches<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/randomness">Skillz Random and Fairness</a></li><li class="navListItem"><a class="navItem" href="/docs/setting-up-tournaments">Setting Up Tournaments</a></li><li class="navListItem"><a class="navItem" href="/docs/gameplay-parameters">Gameplay Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/custom-themes">Custom Themes</a></li><li class="navListItem"><a class="navItem" href="/docs/automatic-difficulty">Automatic Difficulty</a></li><li class="navListItem"><a class="navItem" href="/docs/sso">Single Sign On</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/apple-pay">Apple Pay</a></li><li class="navListItem"><a class="navItem" href="/docs/audio-api">Audio API</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Push Notifications</h4><ul><li class="navListItem"><a class="navItem" href="/docs/ios-push">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/android-push">Android</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Creating In-App Purchases for Virtual Currency</h4><ul><li class="navListItem"><a class="navItem" href="/docs/ios-in-app-purchases">iOS App Store</a></li><li class="navListItem"><a class="navItem" href="/docs/android-in-app-purchases">Google Play Store</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/deep-linking">Deep Linking (Optional iOS Settings)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Your Game<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">IMPORTANT REQUIREMENTS</h4><ul><li class="navListItem"><a class="navItem" href="/docs/game-submission-requirements">Game Submission Requirements</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Going Live on Skillz</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-your-game-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/move-from-sandbox-to-production">Moving from Sandbox To Production</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">iOS App Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-to-ios-app-store">Submission Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/ios-app-store-submission-best-practices">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/ios-store-rejections">Recommended Rejection Responses</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Samsung Galaxy Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/release-to-samsung-galaxy-store">Samsung Galaxy Store</a></li><li class="navListItem"><a class="navItem" href="/docs/samsung-galaxy-store-submission-best-practices">Best Practices</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/release-to-skillz-gamer-portal">Skillz Gamer Portal</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Best Practices<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/crash-detection">Crash Detection</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Anti-Cheating Techniques</h4><ul><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-duplicate-data">Duplicate and Verify Data</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-obfuscate-data">Obfuscate Data</a></li><li class="navListItem"><a class="navItem" href="/docs/anti-cheating-techniques-advanced-data">Advanced Data Protection</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">FAQ<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/unlock-real-prizes">Unlock Real Prizes</a></li><li class="navListItem"><a class="navItem" href="/docs/theme">Game Theme and Marketing Guidelines</a></li><li class="navListItem"><a class="navItem" href="/docs/legal-skillz">Legality of Skill Gaming</a></li><li class="navListItem"><a class="navItem" href="/docs/sandbox-testing">Sandbox Payment Credentials</a></li><li class="navListItem"><a class="navItem" href="/docs/android-dependencies">Android SDK Dependency Tree</a></li><li class="navListItem"><a class="navItem" href="/docs/skillz-currency-modes">Skillz Currency Modes</a></li><li class="navListItem"><a class="navItem" href="/docs/receiving-payments">Receiving Payments</a></li><li class="navListItem"><a class="navItem" href="/docs/orientation">Handling Orientation</a></li><li class="navListItem"><a class="navItem" href="/docs/other-questions">Other Questions</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">API Reference<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/api-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/api-cordova">Cordova</a></li><li class="navListItem"><a class="navItem" href="/docs/api-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/api-unity">Unity</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Setting Up Apple Pay</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="instructions"></a><a href="#instructions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions</h2>
+<p>Skillz supports <a href="https://www.apple.com/apple-pay/">Apple Pay</a> but requires some additional steps to get it up and running in your game. In this guide we will show you how to enable Apple Pay in just a few short steps. Since the following steps require using Keychain, they must be performed on a Mac.</p>
+<h2><a class="anchor" aria-hidden="true" id="generate-the-certificate-signing-request-csr"></a><a href="#generate-the-certificate-signing-request-csr" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Generate the Certificate Signing Request (CSR)</h2>
+<p>First, you will need to generate a <a href="https://en.wikipedia.org/wiki/Certificate_signing_request">CSR file</a> with specific key pair settings using Keychain Access. <code>Key Size</code> will be specified as <code>256 bits</code>, and <code>Algorithm</code> will be specified as <code>ECC</code>.</p>
+<ul>
+<li>On your Mac, open <code>Keychain Access</code></li>
+<li>In the menu bar go to <code>Keychain Access</code> &gt; <code>Certificate Assistant</code> &gt; <code>Request a Certificate from a Certificate Authority...</code>.</li>
+<li>Input your preferred email address</li>
+<li>Select <code>Saved to Disk</code></li>
+<li>Check <code>Let me specify key pair information</code></li>
+<li>Press <code>Continue</code></li>
+<li>Choose a location to save the <code>.certSigningRequest</code> file, and give it a name.</li>
+<li>Select Algorithm <code>ECC</code></li>
+<li>Select Key Size <code>256 Bits</code>
+** NOTE: You MUST select <code>ECC</code> before the <code>256 Bits</code> option becomes available</li>
+<li>Press <code>Continue</code></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="register-a-merchant-id"></a><a href="#register-a-merchant-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Register a Merchant ID</h2>
+<p>Register a Merchant ID via the Apple Provisioning Portal. Typically this follows a  pattern similar to bundle id (e.g., <code>merchant.com.&lt;publisher&gt;.&lt;game&gt;</code>).</p>
+<ul>
+<li>Go to the Apple Developer dashboard and log in</li>
+<li>Navigate to &quot;Identifiers&quot;</li>
+<li>Next to the page title &quot;Identifiers&quot; click the blue <code>+</code> sign button to be taking to the &quot;Register a New Identifier&quot; page</li>
+</ul>
+<p><img src="/docs/assets/apple-pay/applepay_merchid.png" alt=""></p>
+<ul>
+<li>Select <code>Merchant IDs</code> and click <code>Continue</code></li>
+<li>Provide a description and ID. Typically this follows a similar to pattern to bundle id (e.g, <code>merchant.com.&lt;publisher&gt;.&lt;game&gt;</code>).</li>
+<li>Click <code>Continue</code> and if the information looks good, click <code>register</code></li>
+</ul>
+<hr>
+<p>After registering a Merchant ID, you will then need to enable Apple Pay for your game’s App ID on the Apple Developer Dashboard.</p>
+<p><img src="/docs/assets/apple-pay/p3.gif" alt=""></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="certificate-generation"></a><a href="#certificate-generation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Certificate Generation</h2>
+<p>Next you will need to generate your certificate using the CSR you generated via Keychain Access earlier.</p>
+<ul>
+<li>On the Apple Developer dashboard navigate to Certificates</li>
+<li>Next to the page title &quot;Certificates&quot; click the blue <code>+</code> sign button to be taking to the &quot;Create a New Certificate&quot; page</li>
+</ul>
+<p><img src="/docs/assets/apple-pay/applepay_certgen.png" alt=""></p>
+<ul>
+<li>Select <code>Apple Pay Payment Processing Certificate</code> and click <code>Continue</code></li>
+<li>Select the Merchant ID you created and click <code>Continue</code></li>
+<li>Under &quot;Apple Pay Payment Processing Certificate&quot; click <code>Create Certificate</code></li>
+<li>You may be taken to a page &quot;Edit or Configure Merchant ID&quot; - which asks &quot;Will payments associated with this Merchant ID be processed exclusively in China?&quot;. Skillz does not operate in China. So answer <code>no</code>, then click <code>Continue</code>.</li>
+<li>On the &quot;Create a New Certificate&quot; page upload the <code>.certSigningRequest</code> from the first section. Click <code>Continue</code>.</li>
+<li>You will be taken to a confirmation page titled &quot;Download Your Certificate&quot;. Make sure to press the <code>Download</code> button and save your certificate file.</li>
+</ul>
+<p>Download the resulting certificate file (<code>.cer</code>), which you will turn into a <code>.p12</code> file in the next step.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="change-certificate-to-a-p12-"></a><a href="#change-certificate-to-a-p12-" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Certificate to a .p12</h2>
+<p>The certificate you have downloaded is a .cer file, which you will need to change to a .p12 file before uploading to Skillz.</p>
+<ol>
+<li>Once you have downloaded the <code>.cer</code>, open <code>Keychain Access</code> on your computer.</li>
+<li>Import the certificate you created in the previous step by selecting <code>File -&gt; Import</code> Items.</li>
+<li>Select the Certificates category.</li>
+<li>Select your game’s APNS certificate:</li>
+<li>Select <code>File -&gt; Export</code> Items.</li>
+<li>Save as a <code>Personal Information Exchange (.p12)</code> file.</li>
+<li>You will be prompted to create a password. Make note of this password, as you will need it when you upload to Skillz.</li>
+<li>Save the file in a secure place so that you can retrieve it later.</li>
+</ol>
+<p>After you create a .p12 file from the Apple provided .cer, you can upload the .p12 file and provide the password to Skillz on our Apple Pay page under the Configuration section.</p>
+<p><img src="/docs/assets/apple-pay/p5.gif" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="update-the-entitlements-file-in-xcode"></a><a href="#update-the-entitlements-file-in-xcode" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update the Entitlements File in Xcode</h2>
+<p>You will now need to update your entitlements file in Xcode.</p>
+<p>Begin by regenerating and re-downloading the provisioning profiles for your game in the Apple Provisioning Portal. This will ensure they have all updated information regarding Apple Pay. In Xcode, open the capabilities tab for your game’s target, and enable Apple Pay. Select the Merchant ID you created earlier.</p>
+<p><img src="/docs/assets/apple-pay/p6.gif" alt=""></p>
+<p>Confirm the proper entry has been added to the entitlements file for your game.</p>
+<h3><a class="anchor" aria-hidden="true" id="add-passkit-to-your-xcode-project"></a><a href="#add-passkit-to-your-xcode-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add PassKit to Your Xcode Project</h3>
+<p>Finally, add PassKit as a weakly linked framework to your project. This can be done one of two ways described below. These options are identical in effect, it’s up to personal preference.</p>
+<hr>
+<h4><a class="anchor" aria-hidden="true" id="option-1"></a><a href="#option-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Option 1</h4>
+<p>Add <code>weak_framework PassKit</code> to <code>Other Linker Flags</code> in your project’s Build Settings.</p>
+<p><img src="/docs/assets/apple-pay/p7.gif" alt=""></p>
+<hr>
+<h4><a class="anchor" aria-hidden="true" id="option-2"></a><a href="#option-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Option 2</h4>
+<p>Add PassKit to <code>Link Binary With Libraries</code> section of your project’s Build Phases, and mark as Optional.</p>
+<p><img src="/docs/assets/apple-pay/p8.png" alt=""></p>
+<hr>
+<p>You should now be able to complete a deposit via Apple Pay!</p>
+<h2><a class="anchor" aria-hidden="true" id="test-apple-pay"></a><a href="#test-apple-pay" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test Apple Pay</h2>
+<p>When testing Apple Pay, be sure that:</p>
+<ul>
+<li>You are on a device that supports Apple Pay</li>
+<li>You have Apple Pay setup on your device</li>
+<li>The credit card on file is supported by Skillz (Visa, Mastercard)</li>
+</ul>
+<blockquote>
+<h4><a class="anchor" aria-hidden="true" id="note"></a><a href="#note" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h4>
+<p>We only show the Apple Pay button to players if they meet the above conditions.</p>
+</blockquote>
+<p>You will then need to test Apple Pay using a real credit card. But don’t worry, as long as the game is running in the <code>Sandbox</code> environment, your credit card will not be charged!</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/sso"><span class="arrow-prev">← </span><span>Single Sign On</span></a><a class="docs-next button" href="/docs/audio-api"><span>Audio API</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#instructions">Instructions</a></li><li><a href="#generate-the-certificate-signing-request-csr">Generate the Certificate Signing Request (CSR)</a></li><li><a href="#register-a-merchant-id">Register a Merchant ID</a></li><li><a href="#certificate-generation">Certificate Generation</a></li><li><a href="#change-certificate-to-a-p12-">Change Certificate to a .p12</a></li><li><a href="#update-the-entitlements-file-in-xcode">Update the Entitlements File in Xcode</a><ul class="toc-headings"><li><a href="#add-passkit-to-your-xcode-project">Add PassKit to Your Xcode Project</a></li></ul></li><li><a href="#test-apple-pay">Test Apple Pay</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright"><a href="/" class="nav-home"><img src="/img/skillz-logo.svg" alt="Documentation" width="150" height="42"/></a>    Copyright © 2020 Skillz</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'baf1ce8500f322fe95d62a7ebae8cc23',
+                indexName: 'skillz',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

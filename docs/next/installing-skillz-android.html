@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Android · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Follow the instructions below to install and set up the Skillz SDK in your Android Studio project.&lt;/p&gt;
+"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Android · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="/"/><meta property="og:description" content="&lt;p&gt;Follow the instructions below to install and set up the Skillz SDK in your Android Studio project.&lt;/p&gt;
+"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="http://localhost:3000/css/code-blocks/github-gist.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-40410914-4', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/skillz-logo.svg" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><a href="/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://developers.skillz.com" target="_blank">Developer Console</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Install the SDK</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Welcome<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/welcome">Welcome to the New Docs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">What&#x27;s New in v25.x<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/release-notes">Release Notes</a></li><li class="navListItem"><a class="navItem" href="/docs/next/upgrade-sdk">Upgrading to SDK Version 25.x</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Before you Begin<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/tech-requirements">Technical Requirements</a></li><li class="navListItem"><a class="navItem" href="/docs/next/get-game-id">Developer Console Sign Up</a></li><li class="navListItem"><a class="navItem" href="/docs/next/example-games">Examples</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Explaining the Unity Workflow</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/unity-companion">Unity Companion</a></li><li class="navListItem"><a class="navItem" href="/docs/next/build-your-unity-game">Build Your Unity Game</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Install the SDK<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/installing-skillz-ios">iOS</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/next/installing-skillz-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/next/installing-skillz-unity">Unity</a></li><li class="navListItem"><a class="navItem" href="/docs/next/installing-skillz-cordova">Cordova</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Skillz UI<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/launch-skillz-ui">Launch the Skillz UI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Setup the Core Loop<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/play-and-compare-gameplay">Play and Compare Gameplay (Standard)</a></li><li class="navListItem"><a class="navItem" href="/docs/next/realtime-gameplay">Realtime Sync Gameplay</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Finishing Touches<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/randomness">Skillz Random and Fairness</a></li><li class="navListItem"><a class="navItem" href="/docs/next/setting-up-tournaments">Setting Up Tournaments</a></li><li class="navListItem"><a class="navItem" href="/docs/next/gameplay-parameters">Gameplay Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/next/custom-themes">Custom Themes</a></li><li class="navListItem"><a class="navItem" href="/docs/next/automatic-difficulty">Automatic Difficulty</a></li><li class="navListItem"><a class="navItem" href="/docs/next/sso">Single Sign On</a></li><li class="navListItem"><a class="navItem" href="/docs/next/apple-pay">Apple Pay</a></li><li class="navListItem"><a class="navItem" href="/docs/next/audio-api">Audio API</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Push Notifications</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/ios-push">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/next/android-push">Android</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Creating In-App Purchases for Virtual Currency</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/ios-in-app-purchases">iOS App Store</a></li><li class="navListItem"><a class="navItem" href="/docs/next/android-in-app-purchases">Google Play Store</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/next/deep-linking">Deep Linking (Optional iOS Settings)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Launch Your Game<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">IMPORTANT REQUIREMENTS</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/game-submission-requirements">Game Submission Requirements</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Going Live on Skillz</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/release-your-game-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/next/move-from-sandbox-to-production">Moving from Sandbox To Production</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">iOS App Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/release-to-ios-app-store">Submission Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/next/ios-app-store-submission-best-practices">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/next/ios-store-rejections">Recommended Rejection Responses</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Samsung Galaxy Store</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/release-to-samsung-galaxy-store">Samsung Galaxy Store</a></li><li class="navListItem"><a class="navItem" href="/docs/next/samsung-galaxy-store-submission-best-practices">Best Practices</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/next/release-to-skillz-gamer-portal">Skillz Gamer Portal</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Best Practices<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/crash-detection">Crash Detection</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Anti-Cheating Techniques</h4><ul><li class="navListItem"><a class="navItem" href="/docs/next/anti-cheating-techniques-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/next/anti-cheating-techniques-duplicate-data">Duplicate and Verify Data</a></li><li class="navListItem"><a class="navItem" href="/docs/next/anti-cheating-techniques-obfuscate-data">Obfuscate Data</a></li><li class="navListItem"><a class="navItem" href="/docs/next/anti-cheating-techniques-advanced-data">Advanced Data Protection</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">FAQ<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/unlock-real-prizes">Unlock Real Prizes</a></li><li class="navListItem"><a class="navItem" href="/docs/next/theme">Game Theme and Marketing Guidelines</a></li><li class="navListItem"><a class="navItem" href="/docs/next/legal-skillz">Legality of Skill Gaming</a></li><li class="navListItem"><a class="navItem" href="/docs/next/sandbox-testing">Sandbox Payment Credentials</a></li><li class="navListItem"><a class="navItem" href="/docs/next/android-dependencies">Android SDK Dependency Tree</a></li><li class="navListItem"><a class="navItem" href="/docs/next/skillz-currency-modes">Skillz Currency Modes</a></li><li class="navListItem"><a class="navItem" href="/docs/next/receiving-payments">Receiving Payments</a></li><li class="navListItem"><a class="navItem" href="/docs/next/orientation">Handling Orientation</a></li><li class="navListItem"><a class="navItem" href="/docs/next/other-questions">Other Questions</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">API Reference<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/next/api-android">Android</a></li><li class="navListItem"><a class="navItem" href="/docs/next/api-cordova">Cordova</a></li><li class="navListItem"><a class="navItem" href="/docs/next/api-ios">iOS</a></li><li class="navListItem"><a class="navItem" href="/docs/next/api-unity">Unity</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Android</h1></header><article><div><span><p>Follow the instructions below to install and set up the Skillz SDK in your Android Studio project.</p>
+<h2><a class="anchor" aria-hidden="true" id="add-required-maven-repositories"></a><a href="#add-required-maven-repositories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add Required Maven Repositories</h2>
+<p>The Skillz Android SDK and its dependencies reside in the Skillz maven repository. In the module-level <code>build.gradle</code> file (it can be found in the src folder where your game resides, not at the top level), you will need to add this maven repository so that it can later add the Skillz SDK to your project.</p>
+<p>On Android Studio in the Android view on the Project panel, there are two <code>build.gradle</code> files: one labeled Project and one labeled Module. Make sure the one labeled Module is selected like so:</p>
+<p><img src="/docs/assets/install-skillz-sdk/build-gradle-location.png" alt="build dot gradle location"></p>
+<p>Add the Skillz repository like so:</p>
+<pre><code class="hljs css language-groovy">android <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        <span class="token comment">// The Google Maven repository must be listed first</span>
+        <span class="token function">google</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        maven <span class="token punctuation">{</span>
+            url <span class="token string">'http://nexus.skillz.com/content/groups/public/'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Google's Maven repository (re: <code>google()</code>) must be listed first as Gradle won't look past the first Maven repository if it finds an older version of a dependency.</p>
+<h2><a class="anchor" aria-hidden="true" id="adding-the-skillz-sdk-dependency"></a><a href="#adding-the-skillz-sdk-dependency" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding the Skillz SDK Dependency</h2>
+<p>Next, add the Skillz library as a dependency. In this step, you must choose to add either the Stable build or the Beta build of the Skillz Android SDK. If you’re not sure which build is right for you, click <a href="/docs/next/release-notes">here</a> to find the release notes on each build. (For managed accounts, please reach out to your Skillz Account Manager for guidance on which build to integrate.)</p>
+<p>To integrate the latest Stable build, add the following in the same <code>build.gradle</code> file you edited earlier:</p>
+<pre><code class="hljs css language-groovy">android <span class="token punctuation">{</span>
+   <span class="token comment">// Extra code excluded for brevity</span>
+<span class="token punctuation">}</span>
+
+dependencies <span class="token punctuation">{</span>
+    implementation <span class="token string">'com.skillz.sdk:skillz-sdk-android:23.2.1'</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Note: When upgrading to newer Skillz SDK releases in the future, you’ll need to update the specified version (&quot;23.2.1&quot; in the above example) within your project.</p>
+<h2><a class="anchor" aria-hidden="true" id="ensure-android-sdk-version-compatibility"></a><a href="#ensure-android-sdk-version-compatibility" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ensure Android SDK version compatibility</h2>
+<p>In your <code>build.gradle</code> file, you will need to ensure the Android SDK version compatibility. Skillz requires a <code>minSdkVersion</code> of 23 or higher, and works best with a <code>compiledSdkVersion</code> of 28 and <code>targetSdkVersion</code> of 28. If you want to learn more about what's the difference between compiledSdkVersion and targetSdkVersion, you can check out the official Android developer <a href="https://developer.android.com/guide/topics/manifest/uses-sdk-element.html">documentation</a>.</p>
+<pre><code class="hljs css language-groovy">android <span class="token punctuation">{</span>
+    compileSdkVersion <span class="token number">28</span>
+
+    defaultConfig <span class="token punctuation">{</span>
+        minSdkVersion <span class="token number">23</span>
+        targetSdkVersion <span class="token number">28</span>
+        ndk <span class="token punctuation">{</span>
+            abiFilters <span class="token string">"armeabi-v7a"</span><span class="token punctuation">,</span> <span class="token string">"x86"</span><span class="token punctuation">,</span> <span class="token string">"arm64-v8a"</span><span class="token punctuation">,</span> <span class="token string">"x86_64"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Ensure <code>minSdkVersion</code> is set to 23 or higher and that the targetSdkVersion is set to 28 within the android <code>{ defaultConfig { } }</code> block of your <code>build.gradle</code> file.</p>
+<p>Additionally, ensure that the <code>compileSdkVersion</code> within the android block is set to 28.</p>
+<p>You must also include the <code>abiFilters</code> line in order to support both 32-bit and 64-bit devices.</p>
+<h2><a class="anchor" aria-hidden="true" id="add-multidex-keeptxt"></a><a href="#add-multidex-keeptxt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add multidex-keep.txt</h2>
+<p>The Skillz SDK needs a few classes to end up in your APK's main DEX file upon compilation. Modify <code>build.gradle</code> to reference a file called <code>multidex-keep.txt</code> inside the <code>defaultConfig</code> subsection for the <code>android</code> section.</p>
+<pre><code class="hljs css language-groovy">android <span class="token punctuation">{</span>
+    defaultConfig <span class="token punctuation">{</span>
+        multiDexKeepProguard <span class="token function">file</span><span class="token punctuation">(</span><span class="token string">'multidex-keep.txt'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now, add a file called <code>multidex-keep.txt</code> to your Android Studio project with the contents below:</p>
+<pre><code class="hljs css language-text"># multidex-keep.txt
+-keep class io.fabric.sdk.android.** { *; }
+-keep class timber.log.** { *; }
+-keep class com.facebook.FacebookSdk
+-keep class com.path.android.jobqueue.JobManager
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="enable-androidx"></a><a href="#enable-androidx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable AndroidX</h2>
+<p>The Skillz SDK depends on the <a href="https://developer.android.com/jetpack/androidx">AndroidX Support Libraries</a> instead of the original Android Support Libraries. In your project, add the lines below to the <code>gradle.properties</code> file; create one if it does not exist. These will tell Android Studio to automatically migrate dependencies from any original Support Libraries to their AndroidX equivalents.</p>
+<pre><code class="hljs css language-groovy">android<span class="token operator">.</span>useAndroidX<span class="token operator">=</span><span class="token boolean">true</span>
+android<span class="token operator">.</span>enableJetifier<span class="token operator">=</span><span class="token boolean">true</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="upgrade-to-java-8"></a><a href="#upgrade-to-java-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Upgrade to Java 8</h2>
+<p>Since the SDK uses Java 8, you’ll also need to update to that version of Java to ensure compatibility.</p>
+<pre><code class="hljs css language-groovy">android <span class="token punctuation">{</span>
+    compileOptions <span class="token punctuation">{</span>
+        sourceCompatibility JavaVersion<span class="token operator">.</span>VERSION_1_8
+        targetCompatibility JavaVersion<span class="token operator">.</span>VERSION_1_8
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="update-your-proguardtxt"></a><a href="#update-your-proguardtxt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update your proguard.txt</h2>
+<p>This update makes use of the libraries shown below. Please add the following lines to your existing Proguard file so that the Android project can compile correctly.</p>
+<pre><code class="hljs">-keep public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">com</span>.<span class="hljs-title">dylanvann</span>.<span class="hljs-title">fastimage</span>.* { *;</span> }
+-keep public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">com</span>.<span class="hljs-title">dylanvann</span>.<span class="hljs-title">fastimage</span>.** { *;</span> }
+-keepclassmembers <span class="hljs-class"><span class="hljs-keyword">enum</span> * {</span>
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">com</span>.<span class="hljs-title">scottyab</span>.<span class="hljs-title">rootbeer</span>.** { *;</span> }
+
+</code></pre>
+<blockquote>
+<h4><a class="anchor" aria-hidden="true" id="custom-theming-warning"></a><a href="#custom-theming-warning" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Custom Theming Warning</h4>
+<p>If your game takes advantage of our custom themed SDK feature, you will need to build an .ipa or .apk with the new SDK version, upload it to our developer console, and sync your game to Production. Prior to that, you may see artifacts within your custom theme.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="setting-skillz-meta-data"></a><a href="#setting-skillz-meta-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting Skillz meta-data</h2>
+<p>Add the following lines in your Android Manifest’s <code>&lt;application&gt;</code> block:</p>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">application</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Make sure the Skillz &lt;meta-data&gt; tags are all direct children of the &lt;application&gt; tag, otherwise the game won't run properly! --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_game_id"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">""</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_production"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"false"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_game_activity"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"com.packagename.GameActivityName"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_allow_exit"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"true"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_exit_activity"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"com.packagename.MenuActiviyName"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
+</code></pre>
+<p>Now, edit each meta-data line to contain the correct information for your game.</p>
+<hr>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_game_id"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">""</span> /&gt;</span>
+</code></pre>
+<p>Set the value to your Skillz Game ID from the Skillz Developer Console. You can obtain your Game ID by going to your developer console.</p>
+<hr>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_production"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"false"</span> /&gt;</span>
+</code></pre>
+<p>Set this value to <code>false</code> for testing in the Sandbox environment. When you are ready to move to Production and before uploading a binary in your developer console, set this value to <code>true</code>.</p>
+<hr>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_game_activity"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">""</span> /&gt;</span>
+</code></pre>
+<p>Set the value to the name of the activity Skillz should launch when a user enters a Skillz match. Skillz requires a fully-qualified path, example: <code>“com.skillzgames.caverun.GameActivity”</code>.</p>
+<hr>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_allow_exit"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"true"</span> /&gt;</span>
+</code></pre>
+<p>Set the value to <code>false</code> if your game is Skillz-only and there is no main menu of your game. Set the value to <code>true</code> to allow users to exit the Skillz interface back to the main menu of your game. If you set the value of <code>skillz_allow_exit</code> to <code>true</code>, you must also provide the <code>skillz_exit_activity</code> for Skillz to return to. <strong>Otherwise, the screen will be blank</strong>.</p>
+<hr>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"skillz_exit_activity"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">""</span> /&gt;</span>
+</code></pre>
+<p>Set the value to the name of the activity Skillz should launch when a user exits the Skillz menu UI. Skillz requires a fully-qualified path, example: <code>&quot;com.skillzgames.caverun.MainMenuActivity&quot;</code>. This value is only used when <code>skillz_allow_exit</code> is <code>true</code>.</p>
+<hr>
+<blockquote>
+<h4><a class="anchor" aria-hidden="true" id="note"></a><a href="#note" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NOTE</h4>
+<p>You may need to add the following meta-data tag to support the larger aspect ratio of the new Android flagship phones:</p>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta-data</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.max_aspect"</span> <span class="hljs-attr">android:value</span>=<span class="hljs-string">"2.1"</span> /&gt;</span>
+</code></pre>
+</blockquote>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="change-the-main-activity-s-launchmode-to-singletop"></a><a href="#change-the-main-activity-s-launchmode-to-singletop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change the main activity's launchMode to singleTop</h2>
+<p>Inside your <code>AndroidManifest.xml</code> file, set your main activity’s launchMode to <code>singleTop</code>.</p>
+<p>Your main activity is the one with an intent filter with an action set as MAIN and category of LAUNCHER.</p>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">activity</span>
+  <span class="hljs-attr">android:name</span>=<span class="hljs-string">".YourMainActivity"</span>
+  <span class="hljs-attr">android:launchMode</span>=<span class="hljs-string">"singleTop"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.intent.action.MAIN"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">"android.intent.category.LAUNCHER"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="game-activity-should-extend-from-skillzactivity"></a><a href="#game-activity-should-extend-from-skillzactivity" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Game Activity should extend from SkillzActivity</h2>
+<p>The activity that you specified in the meta-data tag <code>skillz_game_activity</code> will need to inherit from SkillzActivity.</p>
+<p>Example:</p>
+<pre><code class="hljs css language-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GameActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">SkillzActivity</span> </span>{
+}
+</code></pre>
+<p>Make sure your <code>build.gradle</code> Syncs sucessfully, and that your project still compiles. If so, you're now ready to <a href="/docs/next/play-and-compare-gameplay">integrate</a> the Skillz SDK.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/next/installing-skillz-ios"><span class="arrow-prev">← </span><span class="function-name-prevnext">iOS</span></a><a class="docs-next button" href="/docs/next/installing-skillz-unity"><span>Unity</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#add-required-maven-repositories">Add Required Maven Repositories</a></li><li><a href="#adding-the-skillz-sdk-dependency">Adding the Skillz SDK Dependency</a></li><li><a href="#ensure-android-sdk-version-compatibility">Ensure Android SDK version compatibility</a></li><li><a href="#add-multidex-keeptxt">Add multidex-keep.txt</a></li><li><a href="#enable-androidx">Enable AndroidX</a></li><li><a href="#upgrade-to-java-8">Upgrade to Java 8</a></li><li><a href="#update-your-proguardtxt">Update your proguard.txt</a></li><li><a href="#setting-skillz-meta-data">Setting Skillz meta-data</a></li><li><a href="#change-the-main-activity-s-launchmode-to-singletop">Change the main activity's launchMode to singleTop</a></li><li><a href="#game-activity-should-extend-from-skillzactivity">Game Activity should extend from SkillzActivity</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright"><a href="/" class="nav-home"><img src="/img/skillz-logo.svg" alt="Documentation" width="150" height="42"/></a>    Copyright © 2020 Skillz</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'baf1ce8500f322fe95d62a7ebae8cc23',
+                indexName: 'skillz',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
